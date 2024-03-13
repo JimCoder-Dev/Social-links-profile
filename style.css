@@ -60,8 +60,11 @@ a{
     --clr-off-black: hsl(0, 0%, 8%);
 }
 
-body{
-    font-size: 62.5%;
+html{
+   font-size: 62.5%;
+}
+
+body{  
     font-family: "Inter", sans-serif;
     background-color: var(--clr-off-black);
     color: var(--clr-white);
