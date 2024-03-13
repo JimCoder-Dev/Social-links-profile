@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* End CSS Reset */
+
+:root{
+    --primary-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-gray: hsl(0, 0%, 20%);
+    --clr-dark-gray: hsl(0, 0%, 12%);
+    --clr-off-black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    background-color: var(--clr-off-black);
+    color: var(--clr-white);
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: var(--clr-dark-gray);
+    width: 38.4rem;
+    height: 61.1rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.2rem;
+}
+
+.name-location{
+    text-align: center;
+}
+
+.profile-pic{
+    width: 8.8rem;
+    border-radius: 50%;
+    margin-top: 4rem;
+}
+
+.profile-pic,
+.name-location,
+.bio{
+    margin-bottom: 2.4rem;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.location{
+    color: var(--primary-green);
+    font-weight: 400;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.4rem;
+    height: 4.5rem;
+    font-weight: 500;
+    background-color: var(--clr-gray);
+    margin-bottom: 1.6rem; 
+    border-radius: 0.8rem;
+    transition: background-color 0.2s ease-in;
+}
+
+.links:hover{
+    background-color: var(--primary-green);
+    cursor: pointer;
+}
+
+.links a{
+    color: var(--clr-white);
+    transition: color 0.2s ease-in;
+}
+
+.links a:visited{
+    color: var(--clr-white);
+}
+
+
+.links:hover a{
+    color: var(--clr-dark-gray);
+}
+
+
+
+
+/* Mobile */
+
+/* 327px 
+    579px
+*/
+
+
+@media (max-width: 375px){
+
+    .card{
+        width: 32.7rem;
+        height: 57.9rem;
+    }
+    .profile-pic{
+        margin-top: 2.4rem;
+    }
+    .links{
+        width: 27.5rem;
+    }
+}
+
